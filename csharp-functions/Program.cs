@@ -19,3 +19,9 @@ void StampaArray(int[] array)
 int[] arr = { 1, 2, 3, 4, 5, 6 };
 
 StampaArray(arr);
+
+int Quadrato(int numero)
+{
+    return numero * numero;
+}
+Console.WriteLine(Quadrato(16));
