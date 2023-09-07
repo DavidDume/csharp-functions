@@ -36,3 +36,16 @@ int[] ElevaArrayAlQuadrato(int[] array)
 }
 
 StampaArray(ElevaArrayAlQuadrato(arr));
+
+int sommaElementiArray(int[] array)
+{
+    int somma = 0;
+    for (int i = 0;i < array.Length; i++)
+    {
+        somma += array[i];
+    }
+    return somma;
+
+}
+
+Console.WriteLine(sommaElementiArray(arr));
