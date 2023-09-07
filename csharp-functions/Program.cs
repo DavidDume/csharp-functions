@@ -25,3 +25,14 @@ int Quadrato(int numero)
     return numero * numero;
 }
 Console.WriteLine(Quadrato(16));
+
+int[] ElevaArrayAlQuadrato(int[] array)
+{
+    int[] copia = (int[])array.Clone();
+    for (int i = 0; i < copia.Length; i++) {
+        copia[i] *= copia[i];
+    }
+    return copia;
+}
+
+StampaArray(ElevaArrayAlQuadrato(arr));
