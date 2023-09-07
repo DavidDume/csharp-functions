@@ -3,6 +3,8 @@
 Console.WriteLine("Quanti elementi inserire?");
 int nElementi = int.Parse(Console.ReadLine());
 int[] arr = new int[nElementi];
+
+
 for (int i = 0; i < nElementi; i++)
 {
     Console.WriteLine($"Inserire il {i+1} numero:");
@@ -61,3 +63,16 @@ Console.WriteLine("Somma di tutti gli elementi dell'array: ");
 Console.WriteLine(sommaElementiArray(arr));
 Console.WriteLine("Il quadrato della somma di tutti gli elementi dell'array: ");
 Console.WriteLine(Quadrato(sommaElementiArray(arr)));
+
+int Fattoriale(int num)
+{
+    if(num == 0)
+    {
+        return 1;
+    } else
+    {
+        return num * Fattoriale(num - 1);
+    }
+}
+
+Console.WriteLine(Fattoriale(9));
